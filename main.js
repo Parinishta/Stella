@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-  import { getAuth,googleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  import { getAuth,googleAuthProvider,signInWithPopup } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
   
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
@@ -16,4 +16,11 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+auth.languageCode = 'it';
  const provider =new GoogleAuthProvider();
+
+const googleLogin = document.getElementById("google-login-btn");
+googleLogin.addEventListener("click",function()){
+alert(50)
+})
