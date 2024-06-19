@@ -21,6 +21,6 @@ auth.languageCode = 'it';
  const provider =new GoogleAuthProvider();
 
 const googleLogin = document.getElementById("google-login-btn");
-googleLogin.addEventListener("click",function()){
+googleLogin.addEventListener("click",function(){
 alert(50)
 })
